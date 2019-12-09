@@ -1,0 +1,136 @@
+$color-primary: #0067b8;
+$color-primary-hover: #005ca3;
+$color-secondary: #fff;
+$color-secondary-hover: #fff;
+
+$color-navlinks: #262626;
+$color-text-light: #616161;
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap')");
+$font-family: "Open Sans", sans-serif;
+
+body {
+  font-family: $font-family;
+  font-size: 15px;
+}
+
+.wrapper {
+  max-width: 1366px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrapper-full {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// --------------------- Header
+header {
+  box-shadow: 0px 1px 20px -12px #333;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 250px;
+    height: 65px;
+    img {
+      width: 100%;
+    }
+  }
+  nav {
+    a {
+      color: $color-navlinks;
+      padding: 10px 20px;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+}
+// --------------------- Header
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+a.call-to-action {
+  padding: 10px 3px 7px 0;
+  position: relative;
+  border: 2px solid transparent;
+  outline: 1px solid transparent;
+  outline-offset: -3px;
+  margin-left: 0;
+  color: $color-primary;
+  background: transparent;
+  transition: none;
+  white-space: normal;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &::after {
+    font-size: 22px;
+    margin-top: -3.5px;
+    margin-left: 4px;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    content: "\f105";
+    vertical-align: top;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    text-shadow: 0 0 1px $color-primary;
+
+  }
+  span {
+    display: inline;
+    border: 2px solid transparent;
+    transition: .2s ease-in-out;
+
+  }
+  &:hover span {
+    border-bottom-color: $color-primary;
+    border-top-color: $color-primary;
+    margin-right: 6px;
+  }
+}
+button.call-to-action {
+  padding: 10px 25px;
+  background: $color-primary;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 2px #333;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-primary-hover;
+  }
+}
+h1.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+section {
+  padding: 50px 0;
+}
+.bg-grey {
+  background: #f2f2f2;
+}
+
+
+// ---------------------- HERO
+.hero {
+  width: 100%;
+  height: 600px;
+}
