@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/fa-pro/css/all.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/normalize.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/cd-css/cd-css.css">
-    
     <title>BP-Project</title>
 </head>
 <body>
@@ -31,7 +30,6 @@
         </nav>
     </div>
    </div>
-
 </header>
 
 
