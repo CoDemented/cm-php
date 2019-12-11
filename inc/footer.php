@@ -1,4 +1,7 @@
-<div class="wrapper">
+
+
+
+<!-- <div class="wrapper">
 
     <div class="hero-text-box">
         <div id='textLoop'>
@@ -9,7 +12,7 @@
         </div>
     </div>
 
-</div>
+</div> -->
 
 <style>
     .hero-text-box {
@@ -49,6 +52,7 @@
 
 
 <script src="<?php echo _ASSETS; ?>js/jquery341.js"></script>
+<script src="<?php echo _ASSETS; ?>js/index.js"></script>
 <script>
 
     $('#textLoop > h1 > span').hide();
@@ -67,6 +71,7 @@
             
         }, 500);
     }, 3000);
+
 </script>
 
 </body>

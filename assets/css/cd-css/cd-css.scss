@@ -7,7 +7,8 @@ $color-navlinks: #262626;
 $color-text-light: #616161;
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap')");
-$font-family: "Open Sans", sans-serif;
+$font-family: "Open Sans",
+sans-serif;
 
 body {
   font-family: $font-family;
@@ -21,7 +22,9 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  box-sizing: border-box;
 }
+
 .wrapper-full {
   width: 100%;
   padding-right: 15px;
@@ -34,6 +37,7 @@ body {
 header {
   box-shadow: 0px 1px 20px -12px #333;
 }
+
 .header-box {
   display: flex;
   align-items: center;
@@ -42,14 +46,17 @@ header {
   .logo {
     width: 250px;
     height: 65px;
+
     img {
       width: 100%;
     }
   }
+
   nav {
     a {
       color: $color-navlinks;
       padding: 10px 20px;
+      white-space: nowrap;
 
       &:hover {
         color: $color-primary-hover;
@@ -57,18 +64,20 @@ header {
     }
   }
 }
+
 // --------------------- Header
 a {
   color: $color-primary;
   text-decoration: none;
 }
+
 a.call-to-action {
   padding: 10px 3px 7px 0;
   position: relative;
   border: 2px solid transparent;
   outline: 1px solid transparent;
   outline-offset: -3px;
-  margin-left: 0;
+  margin-left: -3px;
   color: $color-primary;
   background: transparent;
   transition: none;
@@ -91,18 +100,20 @@ a.call-to-action {
     text-shadow: 0 0 1px $color-primary;
 
   }
+
   span {
     display: inline;
     border: 2px solid transparent;
     transition: .2s ease-in-out;
 
   }
+
   &:hover span {
     border-bottom-color: $color-primary;
-    border-top-color: $color-primary;
     margin-right: 6px;
   }
 }
+
 button.call-to-action {
   padding: 10px 25px;
   background: $color-primary;
@@ -117,20 +128,81 @@ button.call-to-action {
     background: $color-primary-hover;
   }
 }
+
 h1.heading {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 40px;
+  line-height: .4;
+
+  span {
+    font-size: 16px;
+    color: $color-primary;
+
+    &:first-child {
+      vertical-align: text-top;
+    }
+
+    &:last-child {
+      vertical-align: text-bottom;
+    }
+  }
 }
+
 section {
-  padding: 50px 0;
+  padding: 60px 0;
 }
+
 .bg-grey {
   background: #f2f2f2;
 }
 
+//-----------------------MENU
+
+//-----------------------MENU
 
 // ---------------------- HERO
 .hero {
   width: 100%;
   height: 600px;
 }
+
+// -----------------------SERVICES
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.service-box {
+  width: 300px;
+  box-sizing: border-box;
+  margin: 17px;
+  background: rgba(247, 247, 247, 0.55);
+  &:hover {
+    background: rgba(247, 247, 247, 1);
+  }
+
+  .image {
+    width: 100%;
+
+    img {
+      width: 100%
+    }
+  }
+
+  .bottom-box {
+    padding: 0 10px;
+    padding-bottom: 20px;
+
+    h3 {
+      color: $color-primary;
+      border-left: 5px solid grey;
+      padding-left: 5px;
+      margin-left: -10px;
+    }
+  }
+
+}
+
+// -----------------------SERVICES
